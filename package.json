@@ -2,5 +2,20 @@
   "name": "dep-task-c2",
   "version": "0.1.0",
   "private": true,
-  "description": "Scaffold for C2 CI/CD with GitHub Actions"
+  "description": "Minimal Express app for C2 CI/CD with GitHub Actions",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
 }

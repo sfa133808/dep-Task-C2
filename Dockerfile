@@ -1,3 +1,12 @@
-FROM alpine:3.20
+FROM node:22-alpine
 
-CMD ["sh", "-c", "echo Scaffold only"]
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci --omit=dev
+
+COPY index.js ./
+
+EXPOSE 3000
+
+CMD ["node", "index.js"]
