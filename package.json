@@ -1,0 +1,6 @@
+{
+  "name": "dep-task-c2",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scaffold for C2 CI/CD with GitHub Actions"
+}
